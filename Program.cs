@@ -18,6 +18,7 @@ int sum(int A)
 
 }
 int a,b,val;
+int[] array=new int[8];
 Console.WriteLine("введите число А:");
 a=Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("введите число Б:");
@@ -36,3 +37,11 @@ Console.WriteLine("программа принимает на вход числ�
 Console.WriteLine("введите число: ");
 a=Convert.ToInt32(Console.ReadLine());
 Console.WriteLine(" сумма ="+sum(a));
+
+/*программа сщздает массив из 8 случайных элементов*/
+Console.WriteLine("массив: ");
+Random arr = new Random();
+for (int i=0;i<array.Length;i++)
+    array[i]= arr.Next(0,100);
+for (int i=0;i<array.Length;i++)
+    Console.WriteLine(array[i]);
