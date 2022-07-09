@@ -2,6 +2,21 @@
 3, 5->243
 2,4->16
 решение*/
+int sum(int A)
+{
+    int val=0;
+    if(A>10)
+        {
+            while(A!=0)
+            {
+                val+=A%10;
+                A=A/10;
+            }
+        }
+    else val=A;
+    return val;
+
+}
 int a,b,val;
 Console.WriteLine("введите число А:");
 a=Convert.ToInt32(Console.ReadLine());
@@ -14,3 +29,10 @@ for (; b > 1; b--)
 }
 Console.WriteLine(a);
 
+/*написать программу, которая принимает на вход число и выдает сумму цифр в числе
+452->11
+9012-12*/
+Console.WriteLine("программа принимает на вход число и выдает сумму цифр.");
+Console.WriteLine("введите число: ");
+a=Convert.ToInt32(Console.ReadLine());
+Console.WriteLine(" сумма ="+sum(a));
